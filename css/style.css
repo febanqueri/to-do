@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+body {
+    background: url("../images/background.gif");
+}
+
+.container {
+    background-color: #d1d1d1;
+    width: 500px;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 100px auto 0;
+}
+
+.input-task {
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 17px;
+}
+
+.btn-add-task {
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    width: auto;
+    background-color: rgb(40, 148, 40);
+    color: white;
+    font-size: 17px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+    font-weight: 700;
+} 
+
+.btn-add-task:hover {
+    opacity: 0.8;
+}
+
+.btn-add-task:active{
+    opacity: 0.6;
+}
+
+.list-task{
+    width: 100%;
+    list-style: none;
+    margin-top: 25px;
+}
+
+.task {
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+/* Images Button Task */
+.check-task, .trash-task {
+    height: 25px;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.task:hover .check-task, .task:hover .trash-task {
+    opacity: 1;
+}
+
+.done {
+    background-color: #8fac55;
+    text-decoration: line-through;
+}
